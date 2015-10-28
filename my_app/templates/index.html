@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <body>
+{% for query in get_query %}
+  ${{ query.key }} = {{query.value}}
+{% endfor %} 
+{% for query in post_query %}
+  ${{ query.key }} = {{query.value}}
+{% endfor %} 
+  </body>
+</html>
