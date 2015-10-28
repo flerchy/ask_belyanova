@@ -1,0 +1,76 @@
+-----------------------------Log for Nginx-----------------------------------
+-----------------------------------------------------------------------------
+
+
+
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient).....done
+
+
+Server Software:        nginx/1.4.6
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /
+Document Length:        460 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.000 seconds
+Complete requests:      1
+Failed requests:        0
+Total transferred:      611 bytes
+HTML transferred:       460 bytes
+Requests per second:    2538.07 [#/sec] (mean)
+Time per request:       0.394 [ms] (mean)
+Time per request:       0.394 [ms] (mean, across all concurrent requests)
+Transfer rate:          1514.42 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    0   0.0      0       0
+Waiting:        0    0   0.0      0       0
+Total:          0    0   0.0      0       0
+
+
+
+---------------------------Log for gunicorn------------------------------------
+-------------------------------------------------------------------------------
+
+
+
+This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient).....done
+
+
+Server Software:        gunicorn/17.5
+Server Hostname:        127.0.0.1
+Server Port:            8081
+
+Document Path:          /
+Document Length:        460 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.005 seconds
+Complete requests:      1
+Failed requests:        0
+Total transferred:      604 bytes
+HTML transferred:       460 bytes
+Requests per second:    189.47 [#/sec] (mean)
+Time per request:       5.278 [ms] (mean)
+Time per request:       5.278 [ms] (mean, across all concurrent requests)
+Transfer rate:          111.76 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1    1   0.0      1       1
+Processing:     4    4   0.0      4       4
+Waiting:        4    4   0.0      4       4
+Total:          5    5   0.0      5       5
+
